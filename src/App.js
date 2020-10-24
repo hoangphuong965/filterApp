@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import Trademark from './components/Trademark';
+import Computers from './components/Computers';
+import data from './data';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const allTrademark = ['all', ...new Set(data.map((item) => item.trademark))];
+
+class App extends Component {
+  state = {
+    computers: data,
+    trademark: allTrademark,
+  };
+
+  filterItems = (catelory) => {
+    if (catelory === 'all') {
+      this.setState({ computers: data });
+      return;
+    }
+    const newItems = data.filter((item) => item.trademark === catelory);
+    this.setState({ computers: newItems });
+  };
+
+  render() {
+    return (
+      <div className='ui container'>
+        <h1>MY COMPUTER</h1>
+        <Trademark
+          allTrademark={this.state.trademark}
+          filterItems={this.filterItems}
+        />
+        <Computers computers={this.state.computers} />
+      </div>
+    );
+  }
 }
-
 export default App;

@@ -1,0 +1,88 @@
+const computer = [
+  {
+    id: 'asus1',
+    name: 'asus-1',
+    trademark: 'asus',
+    img: './image-asus/asus-1.jpg',
+    price: '18.920.000',
+  },
+  {
+    id: 'asus2',
+    name: 'asus-2',
+    trademark: 'asus',
+    img: './image-asus/asus-2.jpg',
+    price: '28.970.000',
+  },
+  {
+    id: 'asus-3',
+    name: 'asus-3',
+    trademark: 'asus',
+    img: './image-asus/asus-3.jpg',
+    price: '38.970.000',
+  },
+  {
+    id: 'apple-1',
+    name: 'apple-1',
+    trademark: 'apple',
+    img: './image-asus/apple-1.jpg',
+    price: '42.980.000',
+  },
+  {
+    id: 'apple-2',
+    name: 'apple-2',
+    trademark: 'apple',
+    img: './image-asus/apple-2.jpg',
+    price: '52.580.000',
+  },
+  {
+    id: 'apple-3',
+    name: 'apple-3',
+    trademark: 'apple',
+    img: './image-asus/apple-3.jpg',
+    price: '42.980.000',
+  },
+  {
+    id: 'dell-1',
+    name: 'dell-1',
+    trademark: 'dell',
+    img: './image-asus/dell-1.jpg',
+    price: '12.280.000',
+  },
+  {
+    id: 'dell-2',
+    name: 'dell-2',
+    trademark: 'dell',
+    img: './image-asus/dell-2.png',
+    price: '22.480.000',
+  },
+  {
+    id: 'dell-3',
+    name: 'dell-3',
+    trademark: 'dell',
+    img: './image-asus/dell-3.jpg',
+    price: '17.720.000',
+  },
+  {
+    id: 'hp-1',
+    name: 'hp-1',
+    trademark: 'hp',
+    img: './image-asus/hp-1.jpg',
+    price: '18.920.000',
+  },
+  {
+    id: 'hp-2',
+    name: 'hp-2',
+    trademark: 'hp',
+    img: './image-asus/hp-2.jpg',
+    price: '58.920.000',
+  },
+  {
+    id: 'hp-3',
+    name: 'hp-3',
+    trademark: 'hp',
+    img: './image-asus/hp-3.png',
+    price: '38.120.000',
+  },
+];
+
+export default computer;
